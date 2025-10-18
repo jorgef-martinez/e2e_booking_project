@@ -1,0 +1,31 @@
+[project]
+name = "e2e-booking-project"
+version = "0.1.0"
+description = "Prueba tecnica PCO e2e_booking_project"
+authors = [
+    {name = "Jorge Martinez"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "playwright (>=1.55.0,<2.0.0)",
+    "pytest (>=8.4.2,<9.0.0)",
+    "pytest-bdd (>=8.1.0,<9.0.0)",
+    "pytest-playwright (>=0.7.1,<0.8.0)",
+    "pytest-xdist (>=3.8.0,<4.0.0)",
+    "playwright (>=1.55.0,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "step_definitions",
+]
+bdd_features_base_dir = "features/"

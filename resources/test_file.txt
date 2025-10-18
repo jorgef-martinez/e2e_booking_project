@@ -1,0 +1,3 @@
+# resources/test_file.txt
+
+This is a test file for the upload functionality.
